@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^search/([a-zA-Z0-9-/]+)$ search.php?q=$1
+RewriteRule ^search/([a-zA-Z0-9-/]+)/ search.php?q=$1
+RewriteRule ^url/([a-zA-Z0-9-/]+)$ url.php?q=$1
+RewriteRule ^url/([a-zA-Z0-9-/]+)/ url.php?q=$1
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
